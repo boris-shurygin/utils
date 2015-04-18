@@ -20,6 +20,9 @@ static const std::string BUILD_MODE
     ("release");
 #endif
 
+namespace Utils
+{
+
 /**
  * Check if pointer is not null
  * @ingroup Misc
@@ -219,5 +222,5 @@ areSetsIntersected( const std::set<T> &x, const std::set< T> &y)
     }
     return false;
 }
-
+} //namespace Utils
 #endif

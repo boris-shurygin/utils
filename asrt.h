@@ -11,6 +11,9 @@
 #ifndef ASRT_H
 #define ASRT_H
 
+namespace Utils
+{
+
 void fatalAssert(const char *assertion, const char *file, int line);
 
 /* Empty function */
@@ -130,4 +133,5 @@ inline void assertd( bool asrt)
 #endif
 }
 
+} // namespace Utils
 #endif /* ASRT_H */

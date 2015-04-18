@@ -49,7 +49,7 @@
 
 namespace Utils
 {
-    using namespace PrintUtils;
+    using namespace Print;
     using namespace Mem;
 
     /**

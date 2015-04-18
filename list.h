@@ -15,6 +15,9 @@
 
 #include <iterator>
 
+namespace Utils
+{
+
 /**
  * @brief Types of direction in lists.
  * @ingroup List  
@@ -267,8 +270,20 @@ public:
         //pointer operator->() const   { return p; }
         //value_type operator*() const { return *p; }
         
-        friend bool operator==(const iterator&, const iterator&);
-        friend bool operator!=(const iterator&, const iterator&);
+        // Operators are defined here for simplicity
+        // Otherwise a lot of code is needed to predeclare templated operators so they can be used as friends
+        
+        /** Equality check */
+        friend bool operator==(const iterator& i1, const iterator& i2)
+        {
+            return i1.p == i2.p;
+        }
+        /** Ineqaulity check */
+        friend bool operator!=(const iterator& i1, const iterator& i2)
+        {
+            return i1.p != i2.p;
+        }
+
         friend void swap(iterator& lhs, iterator& rhs); //Not implemented; used in C++11?
         friend class List < Data, Tag >;
         
@@ -307,20 +322,6 @@ private:
     pointer first;
 };
 
-template <class Data, typename tag> 
-bool
-operator==( const typename List< Data *, tag>::iterator& i1, 
-            const typename List< Data *, tag>::iterator& i2)
-{
-    return i1.p == i2.p;
-}
-
-template <class Data, typename tag>
-bool
-operator!=( const typename List< Data *, tag>::iterator& i1,
-            const typename List< Data *, tag>::iterator& i2)
-{
-    return i1.p != i2.p;
-}
+} // namespace Utils
 
 #endif

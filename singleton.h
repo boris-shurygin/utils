@@ -12,6 +12,8 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
+namespace Utils
+{ 
 /**
  * @brief Template for simple singleton objects with controlled lifetime.
  * @ingroup Singleton
@@ -213,4 +215,6 @@ AutoSingle< T>::ptr()
 {
     return &instance();
 }
+
+} // namespace Utils
 #endif /* SINGLETON_H */

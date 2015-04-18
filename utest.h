@@ -16,7 +16,9 @@
 
 namespace Utils
 {
-    using namespace PrintUtils;
+
+using namespace Print;
+
 /**
  * Possible test outcomes
  */

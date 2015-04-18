@@ -5,7 +5,7 @@
 #ifndef PRINT_H
 #define PRINT_H
 
-namespace PrintUtils
+namespace Utils { namespace Print
 {
     /** Print to file */
     
@@ -104,7 +104,8 @@ namespace PrintUtils
         p.toStream( stream);
         return stream;
     }
-};
+} // namespace Print
+} // namespace Utils
 
 
  

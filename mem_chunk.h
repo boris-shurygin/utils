@@ -408,5 +408,6 @@ namespace MemImpl
         return os;
     } 
 
-}; /* namespace MemImpl */
+}; // namespace MemImpl
+
 #endif /* MEM_CHUNK_H */

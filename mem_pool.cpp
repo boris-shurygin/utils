@@ -7,5 +7,5 @@
  */
 #include "utils_iface.h"
 
-using namespace Mem;
+using namespace Utils::Mem;
 

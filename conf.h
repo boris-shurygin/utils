@@ -12,6 +12,8 @@
 #ifndef CONF_H
 #define CONF_H
 
+namespace Utils
+{
 /**
  * Command line option type
  * @ingroup Opts
@@ -334,5 +336,5 @@ public:
         return NULL;
     }
 };
-
+} //namespace Utils
 #endif

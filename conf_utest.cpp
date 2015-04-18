@@ -7,6 +7,8 @@
  */
 #include "utils_iface.h"
 
+using namespace Utils;
+
 /**
  * Test configuration and options parsing
  */

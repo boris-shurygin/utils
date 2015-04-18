@@ -8,7 +8,8 @@
 #include "utils_iface.h"
 #include "mem.h"
 
-using namespace MemImpl;
+using namespace Utils;
+using namespace Utils::MemImpl;
 
 MemInfo::MemInfo()
 {

@@ -59,6 +59,9 @@
 #define MEM_LOG_INC_INDENT LOG_INC_INDENT( Utils::LOG_UTILS_MEM)
 #define MEM_LOG_DEC_INDENT LOG_DEC_INDENT( Utils::LOG_UTILS_MEM)
 
+namespace Utils
+{
+
 /**
  * Namespace for memory-related routines
  * @ingroup Mem
@@ -136,4 +139,5 @@ namespace Mem
 #include "mem_obj.h"          /** Memory object base class */
 #include "mem_pool_alloc.h"   /** Pool-based allocator */
 
+} //namespace Utils
 #endif /* MEM_H */
