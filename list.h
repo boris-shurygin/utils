@@ -318,6 +318,8 @@ public:
 
     iterator begin() { return iterator(first); }
     iterator end()   { return iterator(nullptr); }
+	/** Default constructor */
+	List() : first(nullptr) {}
 private:
     pointer first;
 };
